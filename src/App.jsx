@@ -1,8 +1,8 @@
 import "./App.css";
 import Dashboard from "./screens/dashboard/Dashboard";
 import Documents from "./screens/dashboard/Documents";
-import { Layout } from "./screens/dashboard/Layout";
-import { Home } from "./screens/Home";
+import { Layout } from "./screens/Home";
+import { Home } from './s';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
