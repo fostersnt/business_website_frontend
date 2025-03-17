@@ -1,0 +1,11 @@
+.home_div{
+    background-color: red;
+    width: 400px;
+    /* height: 200px; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+}
