@@ -7,7 +7,7 @@ import mobileApp from '../assets/images/mobile_app.webp';
 import cloudSolutions from '../assets/images/cloud_solutions.webp';
 import ai from '../assets/images/ai.webp';
 
-export const Layout = () => {
+export const Home = () => {
   return (
     <div>
       <section id="services" class="services">
@@ -101,4 +101,4 @@ export const Layout = () => {
   );
 };
 
-export default Layout;
+export default Home;
