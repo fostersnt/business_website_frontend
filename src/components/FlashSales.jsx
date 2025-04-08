@@ -32,7 +32,11 @@ export default function FlashSales() {
               src={p.image_url}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
-              whileHover={{ scale: 1.20, rotate: 2 }}
+              whileHover={{
+                scale: 1.1,
+                rotate: [0, 5, -5, 0],
+                boxShadow: '0px 8px 20px rgba(0, 0, 0, 0.2)'
+              }}
               transition={{ duration: 0.5 }}
             />
             <h3 className="mt-2">{p.name}</h3>
