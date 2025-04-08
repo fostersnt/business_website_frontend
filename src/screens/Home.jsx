@@ -21,7 +21,7 @@ export const Home = () => {
 
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <HeroSection />
       <FlashSales />
       <Categories />

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { getProducts } from '../api/Products';
+import '../styles/FlashSales.css';
 
 // const products = [
 //   { id: 1, name: "HAVIT HV-G92 Gamepad", price: 120, discount: 40, img: "/images/gamepad.jpg" },
