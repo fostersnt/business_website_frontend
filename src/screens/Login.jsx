@@ -1,6 +1,6 @@
 import React from "react";
 import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google";
-import FacebookLogin from "react-facebook-login";
+// import FacebookLogin from "react-facebook-login";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -38,14 +38,14 @@ const Login = () => {
         </div>
 
         {/* Facebook Login */}
-        <div className="social-login">
+        {/* <div className="social-login">
           <FacebookLogin
             appId="YOUR_FACEBOOK_APP_ID"
             autoLoad={false}
             fields="name,email,picture"
             callback={responseFacebook}
           />
-        </div>
+        </div> */}
       </div>
     </GoogleOAuthProvider>
   );
