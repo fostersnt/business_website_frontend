@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../assets/styles/Home.css";
 import { Link, Outlet } from "react-router-dom";
 
@@ -15,8 +15,10 @@ import BestSellers from "../components/BestSellers";
 import ProductShowcase from "../components/ProductShowCase";
 import NewArrival from "../components/NewArrival";
 import Footer from "../components/Footer";
+import { getProducts } from "../api/Products";
 
 export const Home = () => {
+
   return (
     <div className="font-sans text-gray-800">
       <Navbar />

@@ -16,22 +16,22 @@ export const getProducts = async () => {
   try {
     const endpoint = `${baseURL}/products`;
     const response = await fetch(endpoint, {
-      headers: [],
+    //   headers: [],
       method: "GET",
       // body: JSON.stringify({})
     });
 
     if (response.ok) {
-      const data = await response.body.json();
+      const data = await response.json();
       return {
         isError: false,
-        data: data,
+        data: data.data,
         message: "Success",
       };
     } else {
       return {
         isError: false,
-        data: null,
+        data: response.status,
         message: "Unknown error occurred",
       };
     }
