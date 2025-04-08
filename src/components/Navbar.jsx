@@ -4,7 +4,7 @@ import '../styles/Navbar.css';
 
 export default function Navbar() {
   return (
-    <nav className="">
+    <nav className="navContainer">
       <div className="">Exclusive</div>
       <ul className="">
         <NavLink className="navLink" to={'/dashboard'}>Home</NavLink>
