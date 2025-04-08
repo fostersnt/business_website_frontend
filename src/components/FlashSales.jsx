@@ -15,14 +15,13 @@ export default function FlashSales() {
         const data = await getProducts();
         console.log("PRODUCTS DATA === ", data);
         setProducts(data.data);
-        
       }
       getData();
     }, []);
 
   return (
-    <section className="p-6">
-      <h2 className="text-xl font-semibold mb-4">🔥 Flash Sales</h2>
+    <>
+      <h2 className="">🔥 Flash Sales</h2>
       <div className="flashSalesContainer">
         {Products.map(p => (
           <div key={p.id} className="productContainer">
@@ -32,6 +31,6 @@ export default function FlashSales() {
           </div>
         ))}
       </div>
-    </section>
+    </>
   );
 }

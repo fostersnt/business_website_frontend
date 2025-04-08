@@ -20,8 +20,8 @@ import { getProducts } from "../api/Products";
 export const Home = () => {
 
   return (
-    <div className="font-sans text-gray-800">
-      <Navbar />
+    <>
+      {/* <Navbar /> */}
       <HeroSection />
       <FlashSales />
       <Categories />
@@ -29,7 +29,7 @@ export const Home = () => {
       <ProductShowcase />
       <NewArrival />
       <Footer />
-    </div>
+    </>
 
     // <div>
     //   <section id="services" class="services">
