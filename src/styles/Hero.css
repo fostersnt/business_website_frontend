@@ -1,0 +1,33 @@
+.hero {
+  background: linear-gradient(to right, #2563eb, #4338ca); /* from-blue-600 to-indigo-700 */
+  color: white;
+  text-align: center;
+  padding: 5rem 2rem; /* py-20 px-8 */
+}
+
+.hero-title {
+  font-size: 3rem; /* text-5xl */
+  font-weight: bold;
+  margin-bottom: 1.5rem; /* mb-6 */
+}
+
+.hero-text {
+  font-size: 1.125rem; /* text-lg */
+  max-width: 42rem; /* max-w-2xl */
+  margin: 0 auto 1.5rem auto; /* mx-auto mb-6 */
+}
+
+.hero-btn {
+  background-color: white;
+  color: #1d4ed8; /* text-blue-700 */
+  font-weight: 600;
+  padding: 0.75rem 1.5rem; /* py-3 px-6 */
+  border-radius: 0.5rem; /* rounded */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #f3f4f6; /* hover:bg-gray-100 */
+}
