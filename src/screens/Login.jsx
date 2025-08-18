@@ -36,7 +36,7 @@ const Login = () => {
             📧 Continue with Email
           </button>
 
-          <button className="login-btn google" onClick={handleGoogleLoginSuccess}>
+          <button className="login-btn google" onClick={() => {}}>
             <GoogleOAuthProvider clientId="622600737424-m8lg627aoe38vocsh09hdp1467fvlsgb.apps.googleusercontent.com">
                 <div className="social-login">
                   <GoogleLogin
