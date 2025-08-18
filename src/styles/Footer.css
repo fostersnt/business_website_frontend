@@ -23,7 +23,7 @@
 .footer-logo {
   font-size: 26px;
   font-weight: bold;
-  color: #3b82f6;
+  color: #4893e9;
 }
 
 .footer-title {
@@ -74,7 +74,7 @@
 
 .newsletter-form button {
   padding: 10px;
-  background-color: #3b82f6;
+  background-color: #114c8e;
   color: white;
   border: none;
   border-radius: 4px;
@@ -84,7 +84,7 @@
 }
 
 .newsletter-form button:hover {
-  background-color: #2563eb;
+  background-color: #80aeee;
 }
 
 .social-icons {
