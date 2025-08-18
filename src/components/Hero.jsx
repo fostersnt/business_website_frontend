@@ -26,7 +26,7 @@ const Hero = () => {
                     <p className="hero-text">
                         Elevate your enterprise with smart, secure, and custom-built digital experiences.
                     </p>
-                    <button className="hero-btn">Get Started</button>
+                    <button className="hero-btn" onClick={() => console.log("BUTTON CLICKED")}>Get Started</button>
                 </div>
             </div>
         </section>
