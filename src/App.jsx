@@ -5,19 +5,20 @@ import { Layout } from "./screens/dashboard/Layout";
 import { Home } from './screens/Home';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./screens/Login";
-import Hero from "./components/Hero";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/admin/login" element={<Login />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/admin/login" element={<Login />} />
           <Route path="dashboard" element={<Layout />}>
             <Route index element={<Dashboard />} />
             <Route path="documents" element={<Documents />} />
           </Route>
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </>

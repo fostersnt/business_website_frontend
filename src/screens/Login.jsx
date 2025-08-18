@@ -8,7 +8,7 @@ const Login = () => {
   // Handle Google login success
   const handleGoogleLoginSuccess = (response) => {
     console.log("Google login successful", response);
-    navigate('/');
+    navigate('/dashboard');
 
     // You can handle the response, like sending the token to your server
   };
