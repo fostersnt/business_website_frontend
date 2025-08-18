@@ -10,6 +10,9 @@ import { Link, Outlet } from "react-router-dom";
 import { getProducts } from "../api/Products";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
+import About_Us from "../components/About_Us";
+import Contact_Us from "../components/Contact_Us";
+import Footer from "../components/Footer";
 
 export const Home = () => {
 
@@ -17,6 +20,9 @@ export const Home = () => {
     <>
       <Hero/>
       <Services/>
+      <About_Us/>
+      <Contact_Us/>
+      <Footer/>
     </>
   );
 };
