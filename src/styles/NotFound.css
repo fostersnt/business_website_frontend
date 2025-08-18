@@ -21,19 +21,19 @@
 
 .notfound-title {
   font-size: 6rem;
-  color: #4b5563;
+  color: #114c8e;
   margin-bottom: 20px;
 }
 
 .notfound-message {
   font-size: 1.2rem;
-  color: #6b7280;
+  color: #114c8e;
   margin-bottom: 30px;
 }
 
 .notfound-button {
   display: inline-block;
-  background-color: #4b5563;
+  background-color: #114c8e;
   color: #ffffff;
   padding: 12px 24px;
   border-radius: 8px;
