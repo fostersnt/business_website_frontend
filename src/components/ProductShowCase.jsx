@@ -13,7 +13,7 @@ import { getProducts } from '../api/Products';
 
 export default function ProductShowcase() {
 
-  const [Products, setProducts] = useState([]);
+  const [Products, setProducts] = useState(null);
     
       useEffect(()=>{
         const getData = async () => {
@@ -29,13 +29,17 @@ export default function ProductShowcase() {
     <section className="p-6">
       <h2 className="text-xl font-semibold mb-4">🛍 Explore Our Products</h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-        {Products.map(product => (
+        {
+          Products != null ?
+          Products.map(product => (
           <div key={product.id} className="border p-4 rounded hover:shadow">
             <img src={product.image_url} alt={product.name} className="h-40 w-full object-contain" />
             <h3 className="mt-2">{product.name}</h3>
             <p className="text-red-500">${product.price}</p>
           </div>
-        ))}
+        )) :
+        <h1 className="">AN ERROR HAS OCCURRED</h1>
+        }
       </div>
     </section>
   );

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { getProducts } from "../api/Products";
 import "../styles/FlashSales.css";
 import { motion } from 'framer-motion';
+import { h1 } from "framer-motion/client";
 
 // const products = [
 //   { id: 1, name: "HAVIT HV-G92 Gamepad", price: 120, discount: 40, img: "/images/gamepad.jpg" },
@@ -15,7 +16,7 @@ export default function FlashSales() {
   useEffect(() => {
     const getData = async () => {
       const data = await getProducts();
-      console.log("PRODUCTS DATA === ", data);
+      console.log("PRODUCTS DATA === ", JSON.stringify(data));
       setProducts(data.data);
     };
     getData();
@@ -25,7 +26,8 @@ export default function FlashSales() {
     <>
       <h2 className="">🔥 Flash Sales</h2>
       <div className="flashSalesContainer">
-        {Products.map((p) => (
+        {Products != null ?
+        Products.map((p) => (
           <div key={p.id} className="productContainer">
             {/* <img src={p.image_url} alt={p.name} className="" /> */}
             <motion.img
@@ -45,7 +47,9 @@ export default function FlashSales() {
               <span className="line-through text-gray-400">${p.price}</span>
             </p>
           </div>
-        ))}
+        )) :
+        <h1 className="">ERROR</h1>
+        }
       </div>
     </>
   );
