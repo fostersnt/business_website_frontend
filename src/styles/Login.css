@@ -1,0 +1,64 @@
+/* styles/LoginScreen.css */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f1f5f9;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.login-box {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-box h2 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  color: #111827;
+}
+
+.login-subtext {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+}
+
+.login-btn {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.login-btn:hover {
+  transform: translateY(-1px);
+}
+
+.login-btn.email {
+  background-color: #111827;
+  color: #ffffff;
+}
+
+.login-btn.google {
+  background-color: #ffffff;
+  color: #111827;
+  border: 1px solid #ccc;
+}
+
+.login-btn.facebook {
+  background-color: #1877f2;
+  color: #ffffff;
+}

@@ -2,9 +2,10 @@ import React from "react";
 import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google";
 // import FacebookLogin from "react-facebook-login";
 import { useNavigate } from "react-router-dom";
+import '../styles/Login.css';
 
 const Login = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   // Handle Google login success
   const handleGoogleLoginSuccess = (response) => {
     console.log("Google login successful", response);
@@ -25,29 +26,33 @@ const Login = () => {
   };
 
   return (
-    <GoogleOAuthProvider clientId="622600737424-m8lg627aoe38vocsh09hdp1467fvlsgb.apps.googleusercontent.com">
+    <>
       <div className="login-container">
-        <h2>Login</h2>
+        <div className="login-box">
+          <h2>Welcome Back</h2>
+          <p className="login-subtext">Choose a login method to continue</p>
 
-        {/* Google Login */}
-        <div className="social-login">
-          <GoogleLogin
-            onSuccess={handleGoogleLoginSuccess}
-            onError={handleGoogleLoginFailure}
-          />
+          <button className="login-btn email" onClick={() => {}}>
+            📧 Continue with Email
+          </button>
+
+          <button className="login-btn google" onClick={handleGoogleLoginSuccess}>
+            <GoogleOAuthProvider clientId="622600737424-m8lg627aoe38vocsh09hdp1467fvlsgb.apps.googleusercontent.com">
+                <div className="social-login">
+                  <GoogleLogin
+                    onSuccess={handleGoogleLoginSuccess}
+                    onError={handleGoogleLoginFailure}
+                  />
+                </div>
+            </GoogleOAuthProvider>
+          </button>
+
+          <button className="login-btn facebook" onClick={() => {}}>
+            🔵 Continue with Facebook
+          </button>
         </div>
-
-        {/* Facebook Login */}
-        {/* <div className="social-login">
-          <FacebookLogin
-            appId="YOUR_FACEBOOK_APP_ID"
-            autoLoad={false}
-            fields="name,email,picture"
-            callback={responseFacebook}
-          />
-        </div> */}
       </div>
-    </GoogleOAuthProvider>
+    </>
   );
 };
 
