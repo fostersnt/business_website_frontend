@@ -15,15 +15,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem; /* gap-8 */
+  gap: 2rem;
 }
 
 .service-card {
   background: white;
-  padding: 1.5rem; /* p-6 */
-  border-radius: 0.5rem; /* rounded */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
-  width: 30rem; /* w-72 */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 30rem;
   transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;

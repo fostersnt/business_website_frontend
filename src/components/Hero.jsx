@@ -1,6 +1,5 @@
 // Hero.jsx
 import React from 'react';
-import heroImage from '../assets/images/website_background_main.png';
 import heroVideo from '../assets/videos/bg_video_2.mp4';
 import '../styles/Hero.css';
 
