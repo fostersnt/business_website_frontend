@@ -50,10 +50,9 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Copyright */}
-      <div className="footer-bottom">
+      {/* <div className="footer-bottom">
         &copy; {new Date().getFullYear()} All rights reserved.
-      </div>
+      </div> */}
     </footer>
   );
 };
