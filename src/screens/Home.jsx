@@ -17,11 +17,11 @@ export const Home = () => {
   return (
     <>
       <Navbar/>
-      <JobListing/>
-      {/* <Hero/>
+      {/* <JobListing/> */}
+      <Hero/>
       <Services/>
       <About_Us/>
-      <Contact_Us/> */}
+      <Contact_Us/>
       <Footer/>
       {/* <CubeLoader/> */}
     </>

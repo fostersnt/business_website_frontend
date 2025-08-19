@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/JobListing.css"; // Link to styles
+import Navbar from "../components/NavBar";
 
 const jobs = [
   {
@@ -123,7 +124,9 @@ const jobs = [
 
 export default function JobListing() {
   return (
-    <div className="job-page">
+    <>
+        <Navbar/>
+        <div className="job-page">
       <section className="job-list">
         {jobs.map((job) => (
           <div key={job.id} className="job-card">
@@ -142,5 +145,6 @@ export default function JobListing() {
         ))}
       </section>
     </div>
+    </>
   );
 }
