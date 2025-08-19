@@ -55,7 +55,7 @@ const Navbar = () => {
                   <span className="">{item.title}</span> <MdOutlineKeyboardArrowDown />
                 </span>
                 {dropdown === index && (
-                  <ul className="dropdown">
+                  <ul className="dropdown top-center">
                     {item.subMenu.map((sub, i) => (
                       <li key={i} className="dropdown-item">
                         {sub}

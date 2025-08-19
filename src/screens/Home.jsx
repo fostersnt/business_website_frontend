@@ -10,16 +10,18 @@ import Contact_Us from "../components/Contact_Us";
 import Footer from "../components/Footer";
 import CubeLoader from "../components/animations/CubeLoader";
 import Navbar from "../components/NavBar";
+import JobListing from "./JobListing";
 
 export const Home = () => {
 
   return (
     <>
       <Navbar/>
-      <Hero/>
+      <JobListing/>
+      {/* <Hero/>
       <Services/>
       <About_Us/>
-      <Contact_Us/>
+      <Contact_Us/> */}
       <Footer/>
       {/* <CubeLoader/> */}
     </>

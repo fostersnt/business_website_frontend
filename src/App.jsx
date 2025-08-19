@@ -6,6 +6,7 @@ import { Home } from './screens/Home';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./screens/Login";
 import NotFound from "./components/NotFound";
+import JobListing from "./screens/JobListing";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route index element={<Dashboard />} />
             <Route path="documents" element={<Documents />} />
           </Route>
+          <Route path="/jobs" element={<JobListing />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
