@@ -8,6 +8,7 @@ import Services from "../components/Services";
 import About_Us from "../components/About_Us";
 import Contact_Us from "../components/Contact_Us";
 import Footer from "../components/Footer";
+import CubeLoader from "../components/animations/CubeLoader";
 
 export const Home = () => {
 
@@ -18,6 +19,7 @@ export const Home = () => {
       <About_Us/>
       <Contact_Us/>
       <Footer/>
+      {/* <CubeLoader/> */}
     </>
   );
 };
