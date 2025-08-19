@@ -54,11 +54,11 @@ const Navbar = () => {
                                 {dropdown === index && (
                                     <div className="dropdown_content">
                                         <img src={ai_image} alt="" />
-                                        {item.subMenu.map((sub, i) => (
-                                            <div key={i} className="dropdown-item">
-                                                <Link to="/jobs" onClick={() => setDropdown(null)}>{sub}</Link>
-                                            </div>
-                                        ))}
+                                        <div className="dropdown-item">
+                                            {item.subMenu.map((sub, i) => (
+                                                <Link key={i} to="/jobs" onClick={() => setDropdown(null)}><span className="navLink">{sub}</span></Link>
+                                            ))}
+                                        </div>
                                     </div>
                                 )}
                             </li>
@@ -69,12 +69,6 @@ const Navbar = () => {
                         )
                     )}
                 </ul>
-                {/* {
-                    dropdown != null ?
-                        <div className="dropdown_content">
-
-                        </div> : null
-                } */}
                 {/* Mobile Menu Button */}
                 <div className="mobile-menu-btn" onClick={() => setIsOpen(!isOpen)}>
                     {isOpen ? "✖" : "☰"}
