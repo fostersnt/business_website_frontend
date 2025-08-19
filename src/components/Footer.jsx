@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="footer-container">
         {/* Brand Info */}
         <div className="footer-section">
-          <h2 className="footer-logo">SoftNova</h2>
+          <h2 className="footer-logo">DictumLogic</h2>
           <p className="footer-text">
             Empowering businesses through innovative software solutions. Let's build the future together.
           </p>
@@ -51,7 +51,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="footer-bottom">
-        &copy; {new Date().getFullYear()} SoftNova Inc. All rights reserved.
+        &copy; {new Date().getFullYear()} DictumLogic Inc. All rights reserved.
       </div>
     </footer>
   );
