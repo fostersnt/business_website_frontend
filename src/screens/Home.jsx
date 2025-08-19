@@ -9,11 +9,13 @@ import About_Us from "../components/About_Us";
 import Contact_Us from "../components/Contact_Us";
 import Footer from "../components/Footer";
 import CubeLoader from "../components/animations/CubeLoader";
+import Navbar from "../components/NavBar";
 
 export const Home = () => {
 
   return (
     <>
+      <Navbar/>
       <Hero/>
       <Services/>
       <About_Us/>
