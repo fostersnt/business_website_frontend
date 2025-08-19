@@ -5,6 +5,10 @@ const Logo = () => {
     logo: {
       fontSize: "32px",
       fontWeight: "bold",
+      // backgroundColor: "#fff",
+      padding: "5px",
+      border: "1px solid #0d47a1",
+      borderRadius: "30px"
     //   fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
     //   display: "inline-block",
     },
