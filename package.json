@@ -3,6 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://fostersnt.github.io/business_website_frontend",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
