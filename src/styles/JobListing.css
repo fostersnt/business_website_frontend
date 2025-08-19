@@ -85,7 +85,6 @@ body {
     color: #fff;
 }
 
-/* Apply button */
 .apply-btn {
   padding: 6px 14px;
   background: #111827;
@@ -103,7 +102,7 @@ body {
 /* Responsive Breakpoints */
 @media (max-width: 1200px) {
   .job-list {
-    grid-template-columns: repeat(3, 1fr); /* 3 jobs per row */
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
