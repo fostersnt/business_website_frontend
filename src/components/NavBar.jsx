@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/NavBar.css";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import Logo from "./Logo";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,13 +35,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        {/* Logo */}
-        <div className="logo">
-          <span className="black">Dictum</span>
-          <span className="orange">Logic</span>
-        </div>
-
-        {/* Desktop Menu */}
+        <Logo/>
         <ul className="menu">
           {menuItems.map((item, index) =>
             item.subMenu ? (
@@ -51,7 +46,6 @@ const Navbar = () => {
                 onMouseLeave={() => setDropdown(null)}
               >
                 <span className="menu-link">
-                  {/* {item.title} <span className="arrow">▼</span> */}
                   <span className="">{item.title}</span> <MdOutlineKeyboardArrowDown />
                 </span>
                 {dropdown === index && (

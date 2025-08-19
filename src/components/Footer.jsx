@@ -2,6 +2,7 @@
 import React from 'react';
 import '../styles/Footer.css';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub } from 'react-icons/fa';
+import Logo from './Logo';
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
       <div className="footer-container">
         {/* Brand Info */}
         <div className="footer-section">
-          <h2 className="footer-logo">DictumLogic</h2>
+          <Logo/>
           <p className="footer-text">
             Empowering businesses through innovative software solutions. Let's build the future together.
           </p>
@@ -51,7 +52,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="footer-bottom">
-        &copy; {new Date().getFullYear()} DictumLogic Inc. All rights reserved.
+        &copy; {new Date().getFullYear()} All rights reserved.
       </div>
     </footer>
   );
