@@ -8,19 +8,19 @@ const Navbar = () => {
   const menuItems = [
     { title: "Home", link: "/" },
     {
-      title: "About AmaliTech",
+      title: "About",
       subMenu: ["Who We Are", "Our Team", "Partners"],
     },
     {
-      title: "AmaliTech Services",
+      title: "Services",
       subMenu: ["Software Development", "QA & Testing", "AI Solutions"],
     },
     {
-      title: "AmaliTech Training",
+      title: "Training",
       subMenu: ["Apply Now", "Programs", "FAQ"],
     },
     {
-      title: "AmaliTech Social",
+      title: "Social",
       subMenu: ["Events", "Community", "Impact Stories"],
     },
     {
@@ -35,8 +35,8 @@ const Navbar = () => {
       <div className="navbar-container">
         {/* Logo */}
         <div className="logo">
-          <span className="black">AMALI</span>
-          <span className="orange">TECH</span>
+          <span className="black">Dictum</span>
+          <span className="orange">Logic</span>
         </div>
 
         {/* Desktop Menu */}
