@@ -53,6 +53,7 @@
   transition: color 0.3s ease;
   display: flex;
   align-items: center;
+  margin-bottom: 0px;
 }
 
 .menu-link:hover {
@@ -67,14 +68,15 @@
 /* Dropdown */
 .dropdown {
   position: absolute;
-  top: 100%;
-  left: 0;
+  /* top: 100%; */
+  /* left: 0; */
   background: #fff;
   list-style: none;
   padding: 10px 0;
-  margin-top: 8px;
+  /* margin-top: 8px; */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   border-radius: 5px;
+  /* min-height: 200px; */
 }
 
 .dropdown-item {
