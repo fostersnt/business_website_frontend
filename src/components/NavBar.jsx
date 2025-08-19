@@ -56,7 +56,7 @@ const Navbar = () => {
                                         <img src={ai_image} alt="" />
                                         <div className="dropdown-item">
                                             {item.subMenu.map((sub, i) => (
-                                                <Link key={i} to="/jobs" onClick={() => setDropdown(null)}><span className="navLink">{sub}</span></Link>
+                                                <Link key={i} to="/jobs" onClick={() => setDropdown(null)}><div className="navLink">{sub}</div></Link>
                                             ))}
                                         </div>
                                     </div>

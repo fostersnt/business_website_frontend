@@ -100,11 +100,14 @@
 
 .navLink{
   color: #114c8e;
+  /* margin: 10px; */
+  padding: 10px;
 }
 
 .navLink:hover {
   background: #ffe8e0;
   color: #ff5722;
+  border: 1px solid #ff5722;
 }
 
 /* Mobile Button */
