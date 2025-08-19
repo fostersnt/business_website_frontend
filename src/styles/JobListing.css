@@ -71,18 +71,24 @@ body {
 }
 
 /* Footer */
-.footer {
+.job_footer {
   margin-top: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 0.9rem;
+  /* background-color: #114c8e; */
+  padding: 5px;
+}
+
+.job_footer span{
+    color: #fff;
 }
 
 /* Apply button */
 .apply-btn {
   padding: 6px 14px;
-  background: #6366f1;
+  background: #114c8e;
   color: white;
   border: none;
   border-radius: 6px;

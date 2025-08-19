@@ -138,7 +138,7 @@ export default function JobListing() {
               <span>{job.type}</span>
               <span>{job.salary}</span>
             </div>
-            <div className="footer">
+            <div className="job_footer">
               <span>{job.posted}</span>
               <button className="apply-btn">Apply</button>
             </div>
