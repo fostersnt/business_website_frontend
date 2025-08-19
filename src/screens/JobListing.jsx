@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/JobListing.css"; // Link to styles
 import Navbar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 const jobs = [
   {
@@ -145,6 +146,7 @@ export default function JobListing() {
         ))}
       </section>
     </div>
+    <Footer/>
     </>
   );
 }
