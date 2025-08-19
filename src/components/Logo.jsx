@@ -5,8 +5,8 @@ const Logo = () => {
     logo: {
       fontSize: "32px",
       fontWeight: "bold",
-      fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-      display: "inline-block",
+    //   fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+    //   display: "inline-block",
     },
     dictum: {
       color: "#0d47a1", // deep blue
