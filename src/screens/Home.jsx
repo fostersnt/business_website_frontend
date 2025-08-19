@@ -12,6 +12,7 @@ import CubeLoader from "../components/animations/CubeLoader";
 import Navbar from "../components/NavBar";
 import JobListing from "./JobListing";
 
+
 export const Home = () => {
 
   return (
