@@ -47,10 +47,12 @@
 
 .menu-link {
   color: #333;
-  font-weight: 500;
+  /* font-weight: 500; */
   cursor: pointer;
   text-decoration: none;
   transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
 }
 
 .menu-link:hover {

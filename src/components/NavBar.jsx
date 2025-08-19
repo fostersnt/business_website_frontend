@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/NavBar.css";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,7 +51,8 @@ const Navbar = () => {
                 onMouseLeave={() => setDropdown(null)}
               >
                 <span className="menu-link">
-                  {item.title} <span className="arrow">▼</span>
+                  {/* {item.title} <span className="arrow">▼</span> */}
+                  <span className="">{item.title}</span> <MdOutlineKeyboardArrowDown />
                 </span>
                 {dropdown === index && (
                   <ul className="dropdown">
