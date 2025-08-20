@@ -108,10 +108,12 @@
 }
 
 .active-link{
-    background-color: #00e5ff;
-  color: #fff;
+    /* background-color: #00e5ff; */
+    border: 2px solid #00e5ff;
+  color: #00e5ff;
   padding: 10px;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .inactive-link:hover {
