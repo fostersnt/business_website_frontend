@@ -4,7 +4,7 @@ import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import Logo from "./Logo";
 
 import ai_image from '../assets/images/ai.webp';
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -56,7 +56,12 @@ const Navbar = () => {
                                         <img src={ai_image} alt="" />
                                         <div className="dropdown-item">
                                             {item.subMenu.map((sub, i) => (
-                                                <Link key={i} to="/jobs" onClick={() => setDropdown(null)}><div className="navLink">{sub}</div></Link>
+                                                <NavLink key={i} to="/jobs" className={({ isActive }) =>
+                                                    isActive ? "active-link" : "inactive-link"
+                                                } onClick={() => setDropdown(null)}>
+                                                    {sub}
+                                                </NavLink>
+                                                // <Link key={i} to="/jobs" onClick={() => setDropdown(null)}><div className="navLink">{sub}</div></Link>
                                             ))}
                                         </div>
                                     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import '../styles/Logo.css';
 
 const Logo = () => {
@@ -30,12 +30,15 @@ const Logo = () => {
   // );
 
   return (
-    <Link to="/">
+    // <Link to="/">
+
+    // </Link>
+    <NavLink to="/">
       <div className="logo">
         <span className="dictum">Dictum</span>
         <span className="logic">Logic</span>
       </div>
-    </Link>
+    </NavLink>
   );
 };
 
