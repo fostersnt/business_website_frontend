@@ -19,7 +19,7 @@ function App() {
             <Route index element={<Dashboard />} />
             <Route path="documents" element={<Documents />} />
           </Route>
-          <Route path="/job" element={<JobListing />} />
+          <Route path="/jobs" element={<JobListing />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
