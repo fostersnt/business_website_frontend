@@ -11,6 +11,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/',
+  base: '/business_website_frontend/',
   plugins: [react()],
 })
