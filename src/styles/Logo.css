@@ -1,21 +1,23 @@
 .logo {
   font-size: 32px;
-  font-weight: bold;
   background-color: #fff;
   padding: 5px;
-  border: 1px solid #ff5722;
+  border: 1px solid #00e5ff;
   border-radius: 30px;
   transition: all 0.3s ease;
 }
 
 .dictum {
+  font-weight: bold;
   color: #0d47a1;
   font-size: 32px;
 }
 
 .logic {
+  font-weight: bold;
   font-size: 32px;
-  color: #ff5722;
+  /* color: #ff5722; */
+  color: #00e5ff;
 }
 
 .logo:hover {
