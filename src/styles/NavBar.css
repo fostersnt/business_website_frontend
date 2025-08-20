@@ -75,7 +75,8 @@
     left: 50%;
     /* padding: 10px; */
     transform: translateX(-85%);
-    width: 400px;
+    width: 25vw;
+    /* width: 400px; */
     min-height: 200px;
     background-color: #fff;
     display: flex;
@@ -85,7 +86,7 @@
 .dropdown_content img{
     width: 250px;
     height: 200px;
-    /* margin-right: 20px; */
+    margin-right: 10px;
 }
 
 .dropdown-item {
