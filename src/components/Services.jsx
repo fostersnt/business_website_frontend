@@ -5,6 +5,7 @@ import bulk_sms_image from '../assets/images/bulk_sms_image.png'
 import custom_software_image from '../assets/images/custom_software_image.png'
 import ussd_image from '../assets/images/ussd_image.png'
 import services_bg_image from '../assets/images/ai.webp';
+import ParticleJsBackground from "./animations/ParticleJs";
 
 const services = [
     // { title: "Bulk SMS & Voice", description: "Reach thousands in seconds.", icon: <MdOutlineSms size={200} color="blue" /> },
@@ -16,6 +17,7 @@ const services = [
 const Services = () => {
     return (
         <>
+        <ParticleJsBackground/>
             <section className="services"
             >
                 <h2 className="services-title">Our Services</h2>
