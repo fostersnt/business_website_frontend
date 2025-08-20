@@ -85,7 +85,7 @@
 .dropdown_content img{
     width: 250px;
     height: 200px;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 
 .dropdown-item {
