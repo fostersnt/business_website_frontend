@@ -11,8 +11,8 @@ import JobListing from "./screens/JobListing";
 function App() {
   return (
     <>
-      {/* <BrowserRouter basename="/business_website_frontend"> */}
-      <BrowserRouter basename="/">
+      <BrowserRouter basename="/business_website_frontend">
+      {/* <BrowserRouter basename="/"> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/admin/login" element={<Login />} />
