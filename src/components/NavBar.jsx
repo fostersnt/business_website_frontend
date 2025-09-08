@@ -98,7 +98,12 @@ const Navbar = () => {
                                     <ul className="mobile-dropdown">
                                         {item.subMenu.map((sub, i) => (
                                             <li key={i} className="mobile-dropdown-item">
-                                                {sub}
+                                                <NavLink key={index} to={sub.link} className={({ isActive }) =>
+                                                    isActive ? "active-link" : "inactive-link"
+                                                } onClick={() => setDropdown(null)}>
+                                                    {sub.title}
+                                                </NavLink>
+                                                {/* {sub.title} */}
                                             </li>
                                         ))}
                                     </ul>
@@ -106,7 +111,12 @@ const Navbar = () => {
                             </li>
                         ) : (
                             <li key={index} className="mobile-item">
-                                {item.title}
+                                <NavLink key={index} to={item.link} className={({ isActive }) =>
+                                    isActive ? "active-link" : "inactive-link"
+                                } onClick={() => setDropdown(null)}>
+                                    {item.title}
+                                </NavLink>
+                                {/* {item.title} */}
                             </li>
                         )
                     )}
