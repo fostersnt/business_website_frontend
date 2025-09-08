@@ -14,23 +14,23 @@ const Navbar = () => {
         { title: "Home", link: "/" },
         {
             title: "About",
-            subMenu: [{ title: "Who We Are", link: "/who_we_are" }, { title: "Our Team", link: "/our_team" }, { title: "Partners", link: "/partners" }],
+            subMenu: ["Who We Are", "Our Team", "Partners"],
         },
         {
             title: "Services",
-            subMenu: [{ title: "Software Development", link: "/software_development" }, { title: "QA & Testing", link: "/qa_testing" }, { title: "AI Solutions", link: "/ai_solutions" }],
+            subMenu: ["Software Development", "QA & Testing", "AI Solutions"],
         },
         {
             title: "Training",
-            subMenu: [{ title: "Apply Now", link: "/apply_now" }, { title: "Programs", link: "/programs" }, { title: "FAQ", link: "/faq" }],
+            subMenu: ["Apply Now", "Programs", "FAQ"],
         },
         {
             title: "Social",
-            subMenu: [{ title: "Events", link: "/events" }, { title: "Community", link: "/community" }, { title: "Impact Stories", link: "/impact_stories" }],
+            subMenu: ["Events", "Community", "Impact Stories"],
         },
         {
             title: "Jobs",
-            subMenu: [{ title: "Open Roles", link: "/jobs" }, { title: "Internships", link: "/internships" }, { title: "Graduate Trainee", link: "/graduate_trainee" }],
+            subMenu: ["Open Roles", "Internships", "Graduate Trainee"],
         },
         { title: "Locations & Contact", link: "/contact" },
     ];
@@ -56,10 +56,10 @@ const Navbar = () => {
                                         <img src={ai_image} alt="" />
                                         <div className="dropdown-item">
                                             {item.subMenu.map((sub, i) => (
-                                                <NavLink key={i} to={sub.link} className={({ isActive }) =>
+                                                <NavLink key={i} to="/jobs" className={({ isActive }) =>
                                                     isActive ? "active-link" : "inactive-link"
                                                 } onClick={() => setDropdown(null)}>
-                                                    {sub.title}
+                                                    {sub}
                                                 </NavLink>
                                                 // <Link key={i} to="/jobs" onClick={() => setDropdown(null)}><div className="navLink">{sub}</div></Link>
                                             ))}
@@ -69,12 +69,7 @@ const Navbar = () => {
                             </li>
                         ) : (
                             <li key={index} className="menu-item">
-                                <NavLink key={index} to={item.link} className={({ isActive }) =>
-                                    isActive ? "active-link" : "inactive-link"
-                                } onClick={() => setDropdown(null)}>
-                                    {item.title}
-                                </NavLink>
-                                {/* <span className="menu-link">{item.title}</span> */}
+                                <span className="menu-link">{item.title}</span>
                             </li>
                         )
                     )}
