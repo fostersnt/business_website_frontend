@@ -11,11 +11,13 @@ import Footer from "../components/Footer";
 import CubeLoader from "../components/animations/CubeLoader";
 import Navbar from "../components/NavBar";
 import JobListing from "./JobListing";
+import ParticleJsBackground from "../components/animations/ParticleJs";
 
 export const Home = () => {
 
   return (
     <>
+    <ParticleJsBackground />
       <Navbar/>
       {/* <JobListing/> */}
       <Hero/>

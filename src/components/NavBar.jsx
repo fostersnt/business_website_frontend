@@ -36,7 +36,7 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className="navbar">
+        <nav className="navbar_main">
             <div className="navbar-container">
                 <Logo />
                 <ul className="menu">
